@@ -1,0 +1,472 @@
+/*background color: #0b0b0d */
+/*element color: 2d2d2d */
+/*focus color: #47c5ff */
+/*text color: #FFF */
+
+body {
+    padding-top: 2rem;
+    background-color: #0b0b0d;
+    color: #FFF;
+    background-color:  #0b0b0d;  
+}
+
+.genericButtonClass {
+    background-color: #2d2d2d;
+    color: #FFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genericButtonClass:hover {
+    border: 2px solid #47c5ff;
+    background-color: #0b0b0d;
+    color: #47c5ff;
+}
+
+#emailDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #121212;
+}
+
+
+/* --- NAVBAR STYLE --- */
+
+#mainNavBar {
+    height: 75px;
+    max-height: 75px;
+    background-color: #0b0b0d;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#mainNavBar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(30deg, #1f51ff, #47c5ff);
+}
+
+nav ul {
+    border-radius: 0;
+    list-style: none;
+    padding: 0;
+    margin: -1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+nav>ul li:first-child {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+#navBarTitle {
+    color: #1f51ff;
+    font-size: 2rem;
+   white-space: nowrap;   /* zin vend sa dush por mos u ban space */
+}
+
+nav ul li {
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>ul li:hover:not(:first-child) {
+    background-color: #1b1b1d;
+    transition: 0.3s;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navBarImg {
+    margin-top: 0px;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+#profileCard {
+    background-color: #121212;
+    color: #FFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    top: 75px;
+    right:30px;
+    border-radius: 20px;
+}
+
+.pop-up-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+.pop-up{
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.pop-up:hover {
+    background-color: #1f51ff;
+    transition: 0.3s;
+    text-align: left;
+}
+
+/* --- COURSE CARD STYLE --- */
+
+.course-conatiner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.subscribeToPremiumPanel { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+
+.subscribeToPremiumPanel h1 {
+    color: #47c5ff;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.subscribeToPremiumPanel p {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #47c5ff;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.subscribeToPremiumPanel img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.course-box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 50px 0;
+}
+
+.course {
+    margin: 0 15px 30px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+}
+
+.course-box a {
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.courseLink {
+    stroke: none;
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.courseLink:hover,
+.courseLink:hover .infoItem-focus {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.courseLink:hover .courseBackGround {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.courseTitle {
+    min-height: 87px;
+    margin: 0 0 25px;
+    width: 40vw;
+
+    overflow: hidden;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+
+    z-index: 2;
+    position: relative;
+
+    top:40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infoItem {
+    font-size: 18px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+    margin: 1em
+    /* padding-left: 6rem; */
+}
+
+.infoItem-focus {
+    font-weight: bold;
+    color: #47c5ff;
+
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+}
+
+.courseBackGround {
+    height: 128px;
+    width: 200px;
+    background-color: #5d05f5;
+
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    border-radius: 50%;
+
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.course:nth-child(2n) .courseBackGround {
+    background-color: #7223fa;
+}
+
+.course:nth-child(3n) .courseBackGround {
+    background-color: #9152ff;
+}
+
+.course:nth-child(4n) .courseBackGround {
+    background-color: #b58aff;
+}
+
+.course:nth-child(5n) .courseBackGround {
+    background-color: #d1b8fc;
+}
+
+.course:nth-child(6n) .courseBackGround {
+    background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+
+    .courseTitle {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .course-conatiner {
+        width: 96%;
+    }
+    .subscribeToPremiumPanel{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 639px) {
+    .course {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .courseTitle {
+        min-height: 72px;
+        line-height: 1;
+
+        font-size: 24px;
+    }
+
+    .courseLink {
+        padding: 22px 40px;
+    }
+
+    .infoItem-focus {
+        font-size: 16px;
+    }
+
+
+}
+
+/* --- HTML QUIZ --- */
+form input[type="submit"] {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+#htmlQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 50px 0;
+    background-color: #121212;
+}
+
+.radioAnswers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radioOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+form[name="htmlQuizForm"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#questionNumber{
+    color: #47c5ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.correctAnswer {
+    display: none;
+    color: #47c5ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.longQuestion{
+    margin-left: 80px;
+    margin-right:80px;
+}
+
+
+.textQuestion {
+    color: #FFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    border: none;
+    border-bottom: 2px solid #000; /* Adjust color as needed */
+    background-color: #1b1b1d;
+
+}
+
+input[type="textfield"] {
+    border-radius: 20px;
+}
+
+#theSubmitButton {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .question {
+        font-size: 0.75rem;
+    }
+    .correctAnswer {
+        font-size: 0.75rem;
+    }
+    .correctAnswer img {
+        height: 0.75rem;
+    }
+
+    .textQuestion {
+        font-size: 0.75rem;
+    }
+}

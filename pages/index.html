@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/login.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="name">SA-Courses</label>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+            <li><a href="#" id="login">Login</a></li>
+            <!-- <li><a id="login" href="#">Login</a></li> -->
+
+
+        </ul>
+    </nav>
+    <section>
+        <div class="div-img"><img src="../images/main.png" alt="Main image"></div>
+        <div class="div-text">
+            <h1>Programming</h1>
+            <p> Programming is at the core of software development. It involves writing code to create applications,
+                websites, and systems that fulfill specific functions. Programmers use languages like Python,
+                JavaScript, Java, and others to design, implement, and maintain software solutions.
+                The creation of websites and web applications relies heavily on programming. Front-end developers use
+                languages like HTML, CSS, and JavaScript to build interactive and user-friendly interfaces, while
+                back-end developers work with languages such as Python, Ruby, and PHP to manage server-side
+                functionality.
+            </p>
+        </div>
+
+        </div>
+        <div id="main">
+            <div class="wrapper animation ch">
+                <span class="bg-animate"></span>
+                <span class="bg-animate2"></span>
+
+                <div class="form-box login">
+                    <h2 class="animation">Login</h2>
+                    <form action="#" id="login-form">
+                        <div class="input-box animation">
+                            <input type="text" class="username" name="username" required>
+                            <label>Username</label>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-box animation">
+                            <input type="password" class="password" name="password" required>
+                            <label>Password</label>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <button type="button" onclick="getLoginForm()" class="btn animation">Login</button>
+                        <div class="logreg-link animation">
+                            <p>Don't have an account <a href="#" class="register-link">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="info-text login">
+                    <h2 class="animation">Welcome Back!</h2>
+                </div>
+
+                <div id="register-box">
+                    <div class="form-box register">
+                        <h2 class="animation">Sign up</h2>
+                        <form id="register-form" >
+                            <div class="input-box animation">
+                                <input type="text" class="sign-username" required name="name">
+                                <label>Username</label>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box animation">
+                                <input type="email" class="sign-email" required name="email">
+                                <label>Email</label>
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div class="input-box animation">
+                                <input type="password" class="sign-password" required name="password">
+                                <label>Password</label>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <!-- <input type="submit" class="btn animation">Sign UP -->
+                            <button type="button" onclick="getSingUpForm()" class="btn animation">Sign up</button> 
+                            <div class="logreg-link animation">
+                                <p>Already have an account <a href="#" class="login-link">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="info-text register">
+                        <h2 class=" animation">Welcome!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <div class="desc">
+                <div class="photo">
+                    <img id="lanti" src="../images/Atlanti.jpg">
+                </div>
+                <p><span class="authorName">Atlant Klaiqi</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab in ipsa ex, cupiditate
+                    excepturi? Illum optio dolorem dolore necessitatibus! Recusandae molestias saepe dolor dolorem
+                    perferendis libero inventore vel iure!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto ab in ipsa ex, cupiditate excepturi? Illum optio dolorem dolore necessitatibus!
+                    Recusandae molestias saepe dolor dolorem perferendis libero inventore vel iure!Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Architecto ab in ipsa ex, cupiditate excepturi? Illum optio
+                    dolorem dolore necessitatibus! Recusandae molestias saepe dolor dolorem perferendis libero inventore
+                    vel iure!</p>
+            </div>
+
+            <div class="desc">
+                <p><span class="authorName">Syard Dauti</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab in ipsa ex, cupiditate
+                    excepturi? Illum optio dolorem dolore necessitatibus! Recusandae molestias saepe dolor dolorem
+                    perferendis libero inventore vel iure!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto ab in ipsa ex, cupiditate excepturi? Illum optio dolorem dolore necessitatibus!
+                    Recusandae molestias saepe dolor dolorem perferendis libero inventore vel iure!Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Architecto ab in ipsa ex, cupiditate excepturi? Illum optio
+                    dolorem dolore necessitatibus! Recusandae molestias saepe dolor dolorem perferendis libero inventore
+                    vel iure!</p>
+                <div class="photo">
+                    <img id="ardi" src="../images/Syardi.jpg">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javaScript" src="../script/script1.js"></script>
+
+
+</body>
+
+</html>
